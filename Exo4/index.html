@@ -7,10 +7,10 @@
     <title>Javascript Exo 4</title>
 </head>
 <body>
-    <form name="form">
+    <form>
         <div class="form-group">
           <label for="firstname">Votre Prénom</label>
-          <input type="text" name="firstName" class="form-control" id="firstname" aria-describedby="firsNameHelp">
+          <input type="text" name="firstName" class="form-control" id="firstName">
         </div>
         <div class="form-group">
           <label for="lastName">Votre Nom</label>
@@ -20,8 +20,8 @@
             <label for="city">Votre ville</label>
             <input type="text" name="city" class="form-control" id="city">
         </div>
-        <button type="submit" class="btn btn-primary" value="Contrôler" onClick="controle(form)"> valider </button>
-      </form>
+        <button type="submit" class="btn btn-primary"  onClick="recupInfos()"> valider </button>
+      </form> <!-- onClick : le lier à une function en JS-->
     
     <script type="text/Javascript" src="script.js"> // commentaire en JS //</script>
 </body>

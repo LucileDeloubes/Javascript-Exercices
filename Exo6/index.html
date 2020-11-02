@@ -10,16 +10,16 @@
 </head>
 <body>
   <p class="text-center font-weight-bold h5 mb-5">Un bien étrange calcul</p>
-    <form name="form">
+    <form>
         <div class="form-group">
           <label for="shoes">Quelle est votre pointure ?</label>
-          <input type="text" name="shoes" class="form-control" id="shoes" aria-describedby="firsNameHelp">
+          <input type="number" name="shoes" class="form-control" id="shoes" aria-describedby="firsNameHelp">
         </div>
         <div class="form-group">
           <label for="birthYear">Quelle est votre année de naissance ?</label>
-          <input type="text" name="birthYear" class="form-control" id="birthYear">
+          <input type="number" name="birthYear" class="form-control" id="birthYear">
         </div>
-        <button type="submit" class="btn btn-info" value="Contrôler" onClick="controle(form)"> Calculer ! </button>
+        <button type="submit" class="btn btn-info"  onClick="controle()"> Calculer ! </button>
       </form>
     
     <script type="text/Javascript" src="script.js"> // commentaire en JS //</script>

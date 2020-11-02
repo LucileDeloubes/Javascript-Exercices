@@ -1,5 +1,5 @@
-function controle(form) {
-    var age = document.form.age.value;
+function controle() {
+    var age = document.getElementById('age').value;
     var majeur = age >= 18;
     var mineur = age < 18;
     if (majeur === true){
