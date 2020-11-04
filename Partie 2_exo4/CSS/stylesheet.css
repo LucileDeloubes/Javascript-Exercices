@@ -1,0 +1,161 @@
+body
+{
+    margin: 0;
+    background-color: #8ac2e1;
+}
+/* exercice 1 créer une entête avec bannière*/
+header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 368px;
+    background-image: url(../IMG/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1
+{
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 3em; 
+}
+/*exercice 2 : créer une barre de navigation */ 
+ul
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+}
+li 
+{
+    padding: 10px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    border: thick double #c2a990;
+    border-radius: 10px;
+}
+/* changer le style d'un attribut "::"*/
+::placeholder
+{
+    font-family: 'Courier New', Courier, monospace
+}
+/* hover permet de faire une action lorsque l'on passe la souris par dessus un élément, ici Li*/
+#nav li:hover
+{
+    background-color: #449ac9;
+}
+.menu
+{
+    background-color: green;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+form
+{
+    align-items: center;
+}
+/* exercice 3 : créer un bloc de paragraphe sous la barre de nav*/
+.home
+{
+    padding: 50px;
+    background-color: #c2a990;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+}
+/*exercice 4 : créer 3 blocs avec image, titre et description*/
+#blocLine
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex end;
+    padding-top: 10px;
+}
+.bloc
+{
+    background-color: #c2a990;
+    height: 350px;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1%;
+}
+.bloc:hover
+{
+    background-color: #c2a990 ;
+}
+.image
+{
+    background-size: 100%;
+    height: 150px;
+    width: 150px;
+}
+h2
+{
+    padding: 10px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+}
+.description
+{
+    background-color:white;
+    height: 100px;
+    width: 150px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 80%;
+    text-align: justify;
+    padding: 10px;
+    overflow-y: scroll ;
+}
+/* Adaptation écran de téléphone */
+@media screen and (max-width: 480px){
+    body{
+        background-color: white; 
+    }
+    .blocLine{
+        display: flex;      
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+    .bloc
+    {
+        width: 400px;
+        height: 100%;
+    }
+    .image
+    {
+        height: 250px;
+        width: 380px;
+    }
+    .description
+    {
+        background-color: white;
+        height: 200px;
+        width: 350px;
+        font-size: 1em;
+        text-align: justify;
+    }
+    ul
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    li{
+        width: 400px;
+        text-align: center;
+        background-color: #8ac2e1;
+      }
+}
